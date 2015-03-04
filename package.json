@@ -14,7 +14,8 @@
     "phantom": "^0.7.2",
     "phantomjs": "^1.9.15",
     "prerender-file-cache": "0.0.6",
-    "tree-kill": "0.0.6"
+    "tree-kill": "0.0.6",
+    "minimist": "1.1.0"
   },
   "bin": {
     "prerender": "server.js"
