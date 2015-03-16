@@ -8,7 +8,8 @@ var options = {
     iterations: process.env.PHANTOM_WORKER_ITERATIONS || 10,
     phantomBasePort: process.env.PHANTOM_CLUSTER_BASE_PORT || 3000,
     port: argv.port || process.env.PHANTOM_PORT,
-    messageTimeout: process.env.PHANTOM_CLUSTER_MESSAGE_TIMEOUT
+    messageTimeout: process.env.PHANTOM_CLUSTER_MESSAGE_TIMEOUT,
+    jsTimeout: argv['js-timeout'] || process.env.JS_TIMEOUT
 }
 
 var server = prerender(options);
